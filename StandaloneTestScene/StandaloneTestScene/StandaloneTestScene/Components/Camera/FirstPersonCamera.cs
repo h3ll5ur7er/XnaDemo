@@ -14,10 +14,10 @@ namespace StandaloneTestScene
         public const int my = 100;
         private readonly Game game;
         private float yaw, pitch;
-        private bool pad;
+        private const bool FlightEnabled = false;
 
 
-        private static FirstPersonCamera camInstance = null;
+        private static FirstPersonCamera camInstance;
         private static object camInstancePadlock = new object();
 
         public static FirstPersonCamera Instance
@@ -37,8 +37,8 @@ namespace StandaloneTestScene
 
         public Ray CentralRay
             => new Ray(
-                Game.GraphicsDevice.Viewport.Unproject(new Vector3(Settings.SCREEN_WIDTH/2,Settings.SCREEN_HEIGHT/2,0), Projection, View, Matrix.Identity),
-                Game.GraphicsDevice.Viewport.Unproject(new Vector3(Settings.SCREEN_WIDTH/2,Settings.SCREEN_HEIGHT/2,1), Projection, View, Matrix.Identity));
+                Game.GraphicsDevice.Viewport.Unproject(new Vector3(Settings.SCREEN_WIDTH/2f,Settings.SCREEN_HEIGHT/2f,0), Projection, View, Matrix.Identity),
+                Game.GraphicsDevice.Viewport.Unproject(new Vector3(Settings.SCREEN_WIDTH/2f,Settings.SCREEN_HEIGHT/2f,1), Projection, View, Matrix.Identity));
 
         public FirstPersonCamera(Game game) : base(game)
         {
@@ -49,7 +49,7 @@ namespace StandaloneTestScene
 
         public override void Initialize()
         {
-            Position =  5*Vector3.Forward;
+            Position =  Vector3.Zero;
         }
 
         public new void LoadContent()
@@ -89,8 +89,8 @@ namespace StandaloneTestScene
         
         private void Look()
         {
-            yaw += -InputController.Position().X * Settings.Control.LOOK_SPEED_MOUSE;
-            pitch += -InputController.Position().Y * (Settings.Control.INVERTED_LOOK ? -1 : 1) *Settings.Control.LOOK_SPEED_MOUSE;
+            yaw += -InputController.Position(InputMethod.Combined).X * Settings.Control.LOOK_SPEED_MOUSE;
+            pitch += -InputController.Position(InputMethod.Combined).Y * (Settings.Control.INVERTED_LOOK ? -1 : 1) *Settings.Control.LOOK_SPEED_MOUSE;
             pitch = MathHelper.Clamp(pitch, -1.5f, 1.5f);
 
             if (Active)
@@ -118,16 +118,24 @@ namespace StandaloneTestScene
             {
                 Move(Vector3.Right);
             }
+            #pragma warning disable 162
+            // ReSharper disable once ConditionIsAlwaysTrueOrFalse
+            // ReSharper disable HeuristicUnreachableCode
+            if (FlightEnabled)
+            {
+                if (InputController.KeyDown(Settings.Control.gDown) || InputController.KeyDown(Settings.Control.kDown) || InputController.KeyDown(Settings.Control.kDown, InputMethod.Simulated))
+                {
+                    Move(Vector3.Down);
+                }
 
-            //if (InputController.KeyDown(Settings.Control.gDown) || InputController.KeyDown(Settings.Control.kDown) || InputController.KeyDown(Settings.Control.kDown, InputMethod.Simulated))
-            //{
-            //    Move(Vector3.Down);
-            //}
-
-            //if (InputController.KeyDown(Settings.Control.gUp) || InputController.KeyDown(Settings.Control.kUp) || InputController.KeyDown(Settings.Control.kUp, InputMethod.Simulated))
-            //{
-            //    Move(Vector3.Up);
-            //}
+                if (InputController.KeyDown(Settings.Control.gUp) || InputController.KeyDown(Settings.Control.kUp) || InputController.KeyDown(Settings.Control.kUp, InputMethod.Simulated))
+                {
+                    Move(Vector3.Up);
+                }
+            }
+            // ReSharper enable HeuristicUnreachableCode
+            #pragma warning restore 162
+            
 
             if (InputController.KeyDown(Settings.Control.gQuit) || InputController.KeyDown(Settings.Control.kQuit) || InputController.KeyDown(Settings.Control.kQuit, InputMethod.Simulated))
             {
@@ -137,15 +145,14 @@ namespace StandaloneTestScene
         private void Move(Vector3 dir)
         {
             var posOffset =  Vector3.Transform(
-                dir*(pad ? Settings.Control.MOVE_SPEED_PAD : Settings.Control.MOVE_SPEED_KEYBOARD),
+                dir*Settings.Control.MOVE_SPEED_KEYBOARD,
                 Matrix.CreateRotationY(yaw));
             if (TryMove == null) Position += posOffset;
 
-            if (TryMove(Position, posOffset.X, 0))
+            if (TryMove != null && TryMove(Position, posOffset.X, 0))
                 Position += new Vector3(posOffset.X, 0, 0);
-            if (TryMove(Position, 0, posOffset.Z))
+            if (TryMove != null && TryMove(Position, 0, posOffset.Z))
                 Position += new Vector3(0, 0, posOffset.Z);
-
         }
     }
 }

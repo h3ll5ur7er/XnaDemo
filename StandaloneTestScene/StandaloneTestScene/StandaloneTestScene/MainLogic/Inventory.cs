@@ -7,7 +7,7 @@ namespace StandaloneTestScene
 {
     public class Inventory
     {
-        private List<IEntity> entities;
+        private List<IItemEntity> entities;
 
         public bool this[string id]
         {
@@ -20,10 +20,10 @@ namespace StandaloneTestScene
 
         public void Clear()
         {
-            entities = new List<IEntity>();
+            entities = new List<IItemEntity>();
         }
 
-        public void PickUp(IEntity entity)
+        public void PickUp(IItemEntity entity)
         {
             entities.Add(entity);
             Screens.GameScreen.CurrentLevel.Entities.Remove(entity);

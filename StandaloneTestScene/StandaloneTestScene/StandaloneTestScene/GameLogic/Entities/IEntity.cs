@@ -6,6 +6,5 @@ namespace StandaloneTestScene
 {
     public interface IEntity : IRenderableGameContent
     {
-        string ID { get; }
     }
 }

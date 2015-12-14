@@ -1,9 +1,6 @@
-using System;
-using System.Diagnostics;
-using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-
+using Microsoft.Xna.Framework.Input;
 
 namespace StandaloneTestScene
 {
@@ -23,24 +20,18 @@ namespace StandaloneTestScene
                 vertical = true;
             if (Screens.GameScreen.CurrentLevel[x + 1, z] == Level.WALL)
                 vertical = false;
-            //vertical =
-            //    Screens.GameScreen.CurrentLevel.Structure.Count(
-            //        y => Vector3.Distance(Position, y.Position) < 1.4 && Math.Abs(y.Position.X - Position.X) > 0.001)
-            //    <
-            //    Screens.GameScreen.CurrentLevel.Structure.Count(
-            //        y => Vector3.Distance(Position, y.Position) < 1.4 && Math.Abs(y.Position.Y - Position.Y) > 0.001);
-            
-            
         }
-        
-
         public override void Update()
         {
+            if (open) return;
             if(!Player.Inventory[keyId]) return;
+            var ray = FirstPersonCamera.Instance.CentralRay;
+            var cast = ray.Intersects(BB);
+            if (cast == null || cast.Value > 2f) return;
+            if (!InputController.KeyDown(Buttons.A) && Mouse.GetState().LeftButton != ButtonState.Pressed) return;
             open = true;
             BB = new BoundingBox(Vector3.Zero, Vector3.Zero);
         }
-         
         public override void Render(Matrix world)
         {
             if(vertical)
@@ -48,7 +39,6 @@ namespace StandaloneTestScene
             else
                 Assets.Models.DoorModel.Draw(world * Matrix.CreateWorld(Position, Vector3.Forward, Vector3.Up) * Matrix.CreateScale(Settings.TILE_WIDTH, 1, Settings.TILE_HEIGHT), GetTexture());
         }
-
         private Texture2D GetTexture()
         {
             switch (keyId)

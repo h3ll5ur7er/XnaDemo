@@ -7,7 +7,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Shaders\SimpleEffect.xnb</Output>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Shaders\SimpleEffect.xnb</Output>
       <Time>2015-12-09T18:22:31.2405692+01:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Shaders\Phong.xnb</Output>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Shaders\Phong.xnb</Output>
       <Time>2015-12-09T15:35:32.1940072+01:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\Key.xnb</Output>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\Key.xnb</Output>
       <Time>2015-12-10T14:31:19.5539531+01:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\wall.xnb</Output>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\wall.xnb</Output>
       <Time>2015-12-09T18:53:40.0573908+01:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\floor.xnb</Output>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\floor.xnb</Output>
       <Time>2015-12-09T18:53:40.0613909+01:00</Time>
     </Item>
     <Item>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Levels\Level1.xnb</Output>
-      <Time>2015-12-13T13:47:46.24617+01:00</Time>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Levels\Level1.xnb</Output>
+      <Time>2015-12-14T22:35:23.3118658+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\BlueKey.png</Source>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\BlueKey.xnb</Output>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\BlueKey.xnb</Output>
       <Time>2015-12-13T13:41:10.9411819+01:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\GreenKey.xnb</Output>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\GreenKey.xnb</Output>
       <Time>2015-12-13T13:41:10.956183+01:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\RedKey.xnb</Output>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\RedKey.xnb</Output>
       <Time>2015-12-13T13:41:10.9441798+01:00</Time>
     </Item>
     <Item>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Levels\Level2.xnb</Output>
-      <Time>2015-12-13T16:16:21.1348216+01:00</Time>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Levels\Level2.xnb</Output>
+      <Time>2015-12-14T22:11:47.3233325+01:00</Time>
     </Item>
     <Item>
       <Source>Textures\BlueDoorClosed.png</Source>
@@ -97,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\BlueDoorClosed.xnb</Output>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\BlueDoorClosed.xnb</Output>
       <Time>2015-12-13T15:23:13.838979+01:00</Time>
     </Item>
     <Item>
@@ -106,7 +106,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\BlueDoorOpen.xnb</Output>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\BlueDoorOpen.xnb</Output>
       <Time>2015-12-13T15:23:13.8429933+01:00</Time>
     </Item>
     <Item>
@@ -115,7 +115,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\GreenDoorClosed.xnb</Output>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\GreenDoorClosed.xnb</Output>
       <Time>2015-12-13T15:23:13.8409781+01:00</Time>
     </Item>
     <Item>
@@ -124,7 +124,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\GreenDoorOpen.xnb</Output>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\GreenDoorOpen.xnb</Output>
       <Time>2015-12-13T15:23:13.7969737+01:00</Time>
     </Item>
     <Item>
@@ -133,7 +133,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\RedDoorClosed.xnb</Output>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\RedDoorClosed.xnb</Output>
       <Time>2015-12-13T15:23:13.8139753+01:00</Time>
     </Item>
     <Item>
@@ -142,7 +142,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\RedDoorOpen.xnb</Output>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\RedDoorOpen.xnb</Output>
       <Time>2015-12-13T15:23:13.8164754+01:00</Time>
     </Item>
     <Item>
@@ -151,8 +151,26 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Levels\Level3.xnb</Output>
-      <Time>2015-12-13T21:42:30.8931479+01:00</Time>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Levels\Level3.xnb</Output>
+      <Time>2015-12-14T21:54:56.2641226+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Particle.png</Source>
+      <Name>Textures\Particle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Textures\Particle.xnb</Output>
+      <Time>2015-12-14T22:18:09.9861426+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Levels\Level0.png</Source>
+      <Name>Levels\Level0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\Levels\Level0.xnb</Output>
+      <Time>2015-12-14T21:54:47.4390855+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -161,10 +179,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestSceneContent\</RootDirectory>
-      <LoggerRootDirectory>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\</LoggerRootDirectory>
-      <IntermediateDirectory>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>D:\Benutzerdaten\Emma\Documents\Visual Studio 2015\Projects\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestSceneContent\</RootDirectory>
+      <LoggerRootDirectory>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\_code\git\XnaDemo\StandaloneTestScene\StandaloneTestScene\StandaloneTestScene\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

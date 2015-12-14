@@ -16,6 +16,7 @@ namespace StandaloneTestScene
         public static readonly Color RED_DOOR = new Color(0xff, 0x00, 0x00);
         public static readonly Color GREEN_DOOR = new Color(0x00, 0xff, 0x00);
         public static readonly Color BLUE_DOOR = new Color(0x00, 0x00, 0xff);
+        public static readonly Color PARTICLE_TEST = new Color(0x12, 0x34, 0x56);
 
         public const string RED_KEY_ID = "RED_KEY";
         public const string GREEN_KEY_ID = "GREEN_KEY";
@@ -41,22 +42,23 @@ namespace StandaloneTestScene
 
         public Level()
         {
-            Structure = new List<IStructureElement>();
-            Entities = new List<IEntity>();
-
-            FirstPersonCamera.Instance.TryMove += CollisionDetection;
-            thingsToRender = new List<IRenderableGameContent>();
-
         }
 
         private bool CollisionDetection(Vector3 position, float x, float z)
         {
             var playerBB = new BoundingBox(position + new Vector3(x, 0, z) + new Vector3(-0.25f, -0.25f, -0.25f),
                 position + new Vector3(x, 0, z) + new Vector3(0.25f, 0.25f, 0.25f));
-
-            foreach (var entity in Entities.Where(entity => entity.BB.Contains(playerBB) != ContainmentType.Disjoint).ToList())
+            foreach (var entity in Entities.OfType<ParticleEffect>())
             {
-                Player.Inventory.PickUp(entity);
+                
+                if (entity.BB.Intersects(playerBB))
+                {
+                    GameController.NextLevel();
+                }
+            }
+            foreach (var item in Entities.Where(entity => entity.BB.Contains(playerBB) != ContainmentType.Disjoint).ToList().OfType<IItemEntity>())
+            {
+                Player.Inventory.PickUp(item);
             }
 
             return Structure.All(s => s.BB.Contains(playerBB) == ContainmentType.Disjoint);
@@ -64,6 +66,12 @@ namespace StandaloneTestScene
 
         public void Load(Texture2D level)
         {
+            Structure = new List<IStructureElement>();
+            Entities = new List<IEntity>();
+
+            FirstPersonCamera.Instance.TryMove += CollisionDetection;
+            thingsToRender = new List<IRenderableGameContent>();
+
             Terrain = new TiledTerrain(level.Width, level.Height, Settings.TILE_WIDTH, Settings.TILE_HEIGHT, -0.5f);
             Ceilling = new TiledTerrain(level.Width, level.Height, Settings.TILE_WIDTH, Settings.TILE_HEIGHT, 0.5f);
 
@@ -110,6 +118,10 @@ namespace StandaloneTestScene
                     {
                         doorPositions.Add(new Vector3(x, y, 2));
                     }
+                    else if (color == PARTICLE_TEST)
+                    {
+                        Entities.Add(new ParticleEffect(new Vector3(x*Settings.TILE_WIDTH, 0, y*Settings.TILE_HEIGHT), 60, 1000, 0.01f));
+                    }
                 }
             }
             foreach (var door in doorPositions)
@@ -152,6 +164,7 @@ namespace StandaloneTestScene
         {
             Terrain.Render(Matrix.Identity);
             Ceilling.Render(Matrix.Identity);
+            if (thingsToRenderInOrder == null) return;
             foreach (var element in thingsToRenderInOrder)
             {
                 element.Render(Matrix.Identity);

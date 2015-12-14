@@ -74,13 +74,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components\Camera\ButtonPressedWrapper.cs" />
+    <Compile Include="Components\Camera\InputController.cs" />
+    <Compile Include="Components\Camera\InputMethod.cs" />
+    <Compile Include="Components\Camera\SimulatedKeyboard.cs" />
     <Compile Include="Components\Camera\StatePositionWrapper.cs" />
+    <Compile Include="GameLogic\Entities\IItemEntity.cs" />
     <Compile Include="GameLogic\Entities\Item.cs" />
     <Compile Include="GameLogic\Entities\Key.cs" />
     <Compile Include="GameLogic\IRenderableGameContent.cs" />
     <Compile Include="GameLogic\StructuralElements\Door.cs" />
     <Compile Include="Graphics\Models\DoorModel.cs" />
     <Compile Include="Graphics\Models\ItemModel.cs" />
+    <Compile Include="Graphics\Models\ParticleEffect.cs" />
     <Compile Include="MainLogic\Assets.cs" />
     <Compile Include="Graphics\Models\TexturedCubeModel.cs" />
     <Compile Include="Graphics\Models\TiledTerrain.cs" />
@@ -93,8 +98,7 @@
     <Compile Include="Graphics\BasicColorRule2.cs" />
     <Compile Include="Graphics\Models\CubeModel.cs" />
     <Compile Include="Components\Camera\FirstPersonCamera.cs" />
-    <Compile Include="Components\Camera\FirstPersonCameraButtonPressedWrapper.cs" />
-    <Compile Include="Components\Camera\FirstPersonCameraStatePositionWrapper.cs" />
+    <Compile Include="Components\Camera\SimulatedMouse.cs" />
     <Compile Include="Components\Camera\ICamera3D.cs" />
     <Compile Include="Graphics\IColorRule.cs" />
     <Compile Include="Graphics\Models\HeightMapTerrain.cs" />

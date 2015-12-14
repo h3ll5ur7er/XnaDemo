@@ -16,9 +16,6 @@ namespace StandaloneTestScene
             
         }
          
-        public override void Render(Matrix world)
-        {
-            Assets.Models.TexturedCube.Draw(world * Matrix.CreateWorld(Position, Vector3.Forward, Vector3.Up) * Matrix.CreateScale(Settings.TILE_WIDTH, 1, Settings.TILE_HEIGHT), Assets.Textures.WallTexture);
-        }
+        public override void Render(Matrix world) => Assets.Models.TexturedCube.Draw(world * Matrix.CreateWorld(Position, Vector3.Forward, Vector3.Up) * Matrix.CreateScale(Settings.TILE_WIDTH, 1, Settings.TILE_HEIGHT), Assets.Textures.WallTexture);
     }
 }

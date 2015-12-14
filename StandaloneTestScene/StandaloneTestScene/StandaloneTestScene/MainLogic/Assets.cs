@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace StandaloneTestScene
@@ -24,6 +22,8 @@ namespace StandaloneTestScene
             public static Texture2D GreenDoorOpenTexture { get; private set; }
             public static Texture2D BlueDoorOpenTexture { get; private set; }
 
+            public static Texture2D Particle { get; private set; }
+
             internal static void Load()
             {
                 WallTexture = Load("floor");
@@ -41,6 +41,8 @@ namespace StandaloneTestScene
                 RedDoorOpenTexture = Load("RedDoorOpen");
                 GreenDoorOpenTexture = Load("GreenDoorOpen");
                 BlueDoorOpenTexture = Load("BlueDoorOpen");
+
+                Particle = Load("Particle");
             }
 
             private static Texture2D Load(string assetName)
@@ -56,24 +58,27 @@ namespace StandaloneTestScene
             public static TexturedCubeModel TexturedCube;
             public static ItemModel ItemModel;
             public static DoorModel DoorModel;
+            public static ParticleModel ParticleModel;
 
             internal static void Load()
             {
                 TexturedCube = new TexturedCubeModel();
                 ItemModel = new ItemModel();
                 DoorModel = new DoorModel();
-            
+                ParticleModel = new ParticleModel(0.05f);
             }
         }
 
         public static class Levels
         {
+            public static Texture2D Level0 { get; private set; }
             public static Texture2D Level1 { get; private set; }
             public static Texture2D Level2 { get; private set; }
             public static Texture2D Level3 { get; private set; }
 
             internal static void Load()
             {
+                Level0 = Load("Level0");
                 Level1 = Load("Level1");
                 Level2 = Load("Level2");
                 Level3 = Load("Level3");

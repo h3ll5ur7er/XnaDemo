@@ -10,9 +10,9 @@ namespace StandaloneTestScene
         public static class Control
         {
 
-            public const bool INVERTED_LOOK = false;
+            public static bool INVERTED_LOOK = false;
 
-            public const float MOVE_SPEED_KEYBOARD = 0.2f;
+            public const float MOVE_SPEED_KEYBOARD = 0.15f;
             public const float LOOK_SPEED_MOUSE = 0.002f;
             public const float TURN_SPEED_KEYBOARD = 0.02f;
 

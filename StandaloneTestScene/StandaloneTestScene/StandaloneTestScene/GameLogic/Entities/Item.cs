@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework;
 
 namespace StandaloneTestScene
 {
-    public abstract class Item : IEntity
+    public abstract class Item : IItemEntity
     {
         public abstract string ID { get; }
         protected float HoveringCounter { get; private set; }

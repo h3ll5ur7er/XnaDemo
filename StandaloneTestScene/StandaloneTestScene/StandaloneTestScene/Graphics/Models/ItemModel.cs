@@ -30,9 +30,9 @@ namespace StandaloneTestScene
         public void Draw(Matrix world, Texture2D texture)
         {
             if (useDefaultShader)
-                base.Render(GameController.DefaultShader, GameController.GDevice, world, FirstPersonCamera.Instance, false, texture);
+                Render(GameController.DefaultShader, GameController.GDevice, world, FirstPersonCamera.Instance, false, texture);
             else
-                base.Render(GameController.CustomShader, GameController.GDevice, world, FirstPersonCamera.Instance, false, texture);
+                Render(GameController.CustomShader, GameController.GDevice, world, FirstPersonCamera.Instance, false, texture);
         }
     }
 }
