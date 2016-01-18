@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{3CEA96DE-21A6-46F1-921C-DA9841C4D91C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>XnaDemov01</RootNamespace>
+    <AssemblyName>XnaDemov01</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\packages\MonoGame.Framework.Linux.3.3.0.0\lib\net40\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>..\packages\MonoGame.Framework.Linux.3.3.0.0\lib\net40\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="Tao.Sdl">
+      <HintPath>..\packages\MonoGame.Framework.Linux.3.3.0.0\lib\net40\Tao.Sdl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Components\Camera\ButtonPressedWrapper.cs" />
+    <Compile Include="Components\Camera\FirstPersonCamera.cs" />
+    <Compile Include="Components\Camera\ICamera3D.cs" />
+    <Compile Include="Components\Camera\StatePositionWrapper.cs" />
+    <Compile Include="GameLogic\IRenderableGameContent.cs" />
+    <Compile Include="GameLogic\Level.cs" />
+    <Compile Include="GameLogic\Entities\IEntity.cs" />
+    <Compile Include="GameLogic\Entities\Item.cs" />
+    <Compile Include="GameLogic\Entities\Key.cs" />
+    <Compile Include="GameLogic\StructuralElements\Door.cs" />
+    <Compile Include="GameLogic\StructuralElements\IStructureElement.cs" />
+    <Compile Include="GameLogic\StructuralElements\SolidBlock.cs" />
+    <Compile Include="GameLogic\StructuralElements\StructureElementBase.cs" />
+    <Compile Include="Graphics\BasicColorRule.cs" />
+    <Compile Include="Graphics\BasicColorRule2.cs" />
+    <Compile Include="Graphics\IColorRule.cs" />
+    <Compile Include="Graphics\VertexPositionColorNormal.cs" />
+    <Compile Include="Graphics\Models\CubeModel.cs" />
+    <Compile Include="Graphics\Models\DoorModel.cs" />
+    <Compile Include="Graphics\Models\HeightMapTerrain.cs" />
+    <Compile Include="Graphics\Models\ItemModel.cs" />
+    <Compile Include="Graphics\Models\Model.cs" />
+    <Compile Include="Graphics\Models\Terrain.cs" />
+    <Compile Include="Graphics\Models\TexturedCubeModel.cs" />
+    <Compile Include="Graphics\Models\TiledTerrain.cs" />
+    <Compile Include="MainLogic\Assets.cs" />
+    <Compile Include="MainLogic\Game1.cs" />
+    <Compile Include="MainLogic\GameController.cs" />
+    <Compile Include="MainLogic\Inventory.cs" />
+    <Compile Include="MainLogic\Player.cs" />
+    <Compile Include="MainLogic\Program.cs" />
+    <Compile Include="MainLogic\Settings.cs" />
+    <Compile Include="MainLogic\Vector3Extentions.cs" />
+    <Compile Include="MainLogic\VertexListExtentions.cs" />
+    <Compile Include="ScreenManagement\GameScreen.cs" />
+    <Compile Include="ScreenManagement\IScreen.cs" />
+    <Compile Include="ScreenManagement\MenuScreen.cs" />
+    <Compile Include="ScreenManagement\PauseScreen.cs" />
+    <Compile Include="ScreenManagement\Screens.cs" />
+    <Compile Include="Components\GUI\GUIElement.cs" />
+    <Compile Include="Components\Camera\InputController.cs" />
+    <Compile Include="Components\Camera\InputMethod.cs" />
+    <Compile Include="Components\Camera\SimulatedKeyboard.cs" />
+    <Compile Include="Components\Camera\SimulatedMouse.cs" />
+    <Compile Include="GameLogic\Entities\IItemEntity.cs" />
+    <Compile Include="Graphics\Models\ParticleEffect.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon.png" />
+    <None Include="Content\Content.mgcb" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OpenTK.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tao.Sdl.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Components\GUI\" />
+  </ItemGroup>
+</Project>

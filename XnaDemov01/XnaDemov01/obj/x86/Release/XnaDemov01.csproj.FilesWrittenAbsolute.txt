@@ -1,0 +1,10 @@
+/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/obj/x86/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/bin/Release/OpenTK.dll.config
+/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/bin/Release/Tao.Sdl.dll.config
+/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/bin/Release/XnaDemov01.exe.mdb
+/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/bin/Release/XnaDemov01.exe
+/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/obj/x86/Release/XnaDemov01.exe
+/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/obj/x86/Release/XnaDemov01.exe.mdb
+/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/bin/Release/MonoGame.Framework.dll
+/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/bin/Release/OpenTK.dll
+/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/bin/Release/Tao.Sdl.dll

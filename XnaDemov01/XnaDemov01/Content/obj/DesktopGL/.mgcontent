@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>HiDef</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Levels/Level0.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Levels/Level1.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Levels/Level2.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Levels/Level3.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Textures/BlueDoorClosed.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Textures/BlueDoorOpen.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Textures/BlueKey.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Textures/GreenDoorClosed.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Textures/GreenDoorOpen.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Textures/GreenKey.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Textures/Key.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Textures/RedDoorClosed.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Textures/RedDoorOpen.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Textures/RedKey.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Textures/floor.jpg</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Textures/wall.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Textures/Particle.png</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Sound/Background/BackgroundMusic.wav</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Sound/Effects/OpenDoor.wav</File>
+    <File>/home/hellsurfer/src/xnademo01/XnaDemov01/XnaDemov01/Content/Sound/Effects/PickupKey.wav</File>
+  </SourceFiles>
+</SourceFileCollection>

@@ -1,0 +1,25 @@
+﻿<Properties StartupItem="XnaDemov01/XnaDemov01.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XnaDemov01/MainLogic/GameController.cs">
+    <Files>
+      <File FileName="XnaDemov01/MainLogic/GameController.cs" Line="63" Column="6" />
+      <File FileName="XnaDemov01/MainLogic/Game1.cs" Line="1" Column="1" />
+      <File FileName="XnaDemov01/MainLogic/Settings.cs" Line="1" Column="1" />
+      <File FileName="XnaDemov01/Components/Camera/FirstPersonCamera.cs" Line="1" Column="1" />
+      <File FileName="XnaDemov01/GameLogic/Level.cs" Line="1" Column="1" />
+      <File FileName="XnaDemov01/MainLogic/Inventory.cs" Line="1" Column="1" />
+      <File FileName="XnaDemov01/Components/Camera/StatePositionWrapper.cs" Line="1" Column="1" />
+      <File FileName="XnaDemov01/Components/GUI/GUIElement.cs" Line="1" Column="1" />
+      <File FileName="XnaDemov01/Graphics/Models/Model.cs" Line="1" Column="1" />
+      <File FileName="XnaDemov01/Components/Camera/InputController.cs" Line="1" Column="1" />
+      <File FileName="XnaDemov01/GameLogic/Entities/Item.cs" Line="1" Column="1" />
+      <File FileName="XnaDemov01/MainLogic/Player.cs" Line="1" Column="1" />
+      <File FileName="XnaDemov01/MainLogic/Assets.cs" Line="1" Column="1" />
+      <File FileName="XnaDemov01/Graphics/Models/ParticleEffect.cs" Line="114" Column="50" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
